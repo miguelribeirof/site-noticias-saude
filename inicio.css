@@ -1,0 +1,99 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("Noticias wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;     
+  background-color: #82e2ff;     
+}
+
+.navbar-verde .navbar-nav .nav-link {
+  color: #00d3c9 !important; /* verde claro */
+}
+
+.navbar-verde .navbar-nav .nav-link:hover,
+.navbar-verde .navbar-nav .nav-link.active {
+  color: #00e8dc !important; /* tom mais claro ao passar o mouse ou ativo */
+}
+
+.navbar-verde .navbar-brand {
+  color: #00d3c9 !important; /* mesmo verde claro */
+}
+
+.navbar-verde .navbar-brand:hover {
+  color: #00e8dc !important; /* efeito de hover */
+}
+
+.navbar {
+  transition: top 0.4s ease-in-out; /* efeito de deslizar suave */
+}
+
+.blur
+{
+    backdrop-filter: blur(10px);
+}
+
+.caixatitulo
+{
+    font-size: 1000%;
+    text-shadow: 8px 8px 18px rgba(0, 0, 0, 0.6);
+    color: blue;
+}
+
+.caixasubtitulo
+{
+    text-shadow: 10px 10px 24px rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.primeiroBot
+{
+    color: black;
+}
+
+.caixatexto
+{
+    background-size: cover;
+    background-image: url("Fundo saúde.png");
+    position: absolute;
+    top: 100%;
+    right: 0%;
+}
+
+.titulo
+{
+    font-size: 325%;
+    padding-top: 5%;
+}
+
+.texto
+{
+    padding-inline: 30%;
+}
+
+.caixadenoticias
+{
+  position: absolute;
+  top:219.2%;
+  left: 0;
+  background-color: rgb(0, 255, 200);
+}
+
+.card {
+  max-width: 100%; /* largura máxima da caixa */
+  margin: 0 auto;    /* centraliza horizontalmente */
+}
+
+.card-img-top {
+  max-height: 180px; /* limita a altura da imagem */
+  object-fit: cover; /* mantém proporção e corta o excesso */
+}
+
+/*Quando passsar o mouse, fica preto o card*/
+.card-hover-black:hover {
+  background-color: rgb(0, 191, 255);
+  cursor: pointer; /* Muda o cursor para indicar clique */
+  color: white;
+}
