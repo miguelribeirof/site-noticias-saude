@@ -9,25 +9,12 @@ html, body {
   background-color: #82e2ff;     
 }
 
-.navbar-verde .navbar-nav .nav-link {
-  color: #00d3c9 !important; /* verde claro */
-}
-
-.navbar-verde .navbar-nav .nav-link:hover,
-.navbar-verde .navbar-nav .nav-link.active {
-  color: #00e8dc !important; /* tom mais claro ao passar o mouse ou ativo */
-}
-
-.navbar-verde .navbar-brand {
-  color: #00d3c9 !important; /* mesmo verde claro */
-}
-
-.navbar-verde .navbar-brand:hover {
-  color: #00e8dc !important; /* efeito de hover */
-}
-
 .navbar {
-  transition: top 0.4s ease-in-out; /* efeito de deslizar suave */
+    transition: opacity 0.4s ease; /* Transparência suave */
+}
+
+.navbar.off {
+    opacity: 0; /* Quanto menor, mais transparente */
 }
 
 .blur
@@ -37,7 +24,7 @@ html, body {
 
 .caixatitulo
 {
-    font-size: 1000%;
+    font-size: clamp(5rem, 11vw, 12rem);
     text-shadow: 8px 8px 18px rgba(0, 0, 0, 0.6);
     color: blue;
 }
@@ -56,10 +43,17 @@ html, body {
 .caixatexto
 {
     background-size: cover;
-    background-image: url("Fundo saúde.png");
+    background-image: url("images/Fundo saúde.png");
     position: absolute;
     top: 100%;
     right: 0%;
+}
+
+/* Remove a imagem só no celular */
+@media (max-width: 768px) {
+    .caixatexto {
+        background-image: none !important;
+    }
 }
 
 .titulo
@@ -68,9 +62,15 @@ html, body {
     padding-top: 5%;
 }
 
-.texto
-{
+.texto {
     padding-inline: 30%;
+}
+
+@media (max-width: 768px) {
+    .texto {
+        padding-inline: 5%;
+        font-size: 1.2rem; /* opcional: melhora leitura */
+    }
 }
 
 .caixadenoticias
@@ -78,7 +78,7 @@ html, body {
   position: absolute;
   top:219.2%;
   left: 0;
-  background-color: rgb(0, 255, 200);
+  background-color: rgb(0, 255, 242);
 }
 
 .card {
@@ -87,7 +87,7 @@ html, body {
 }
 
 .card-img-top {
-  max-height: 180px; /* limita a altura da imagem */
+  max-height: 150px; /* limita a altura da imagem */
   object-fit: cover; /* mantém proporção e corta o excesso */
 }
 
@@ -96,4 +96,38 @@ html, body {
   background-color: rgb(0, 191, 255);
   cursor: pointer; /* Muda o cursor para indicar clique */
   color: white;
+}
+
+.texto-sombreado {
+    color: white;
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.5);  /* deixa mais forte */
+}
+
+.text-neon 
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.5);
+        font-weight: 700;
+}
+
+.text-neon:hover
+{
+  color: rgb(0, 191, 255);
+}
+
+.nav-item
+{
+    text-shadow: 
+        2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.nav-item:hover .nav-link {
+    color: rgb(0, 191, 255) !important;
+}
+
+.nav-link.active 
+{
+    text-decoration: underline;
 }

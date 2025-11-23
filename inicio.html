@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- favicon -->
-  <link rel="icon" href="imagens/Tecno terra.png" type="image/x-icon">
+  <link rel="icon" href="imagens/Logo If.png" type="image/x-icon">
 
   <!-- CSS Inicial -->
   <link rel="stylesheet" href="inicio.css">
@@ -25,8 +25,8 @@
     <div class="container-fluid">
       
       <!--Logo-->
-      <a class="navbar-brand fw-bold fs-2" href="quiz.html">
-        <img src="Logo If.png" alt="Logo" height="50" class="d-inline-block align-text-top">
+      <a class="navbar-brand fw-bold fs-2 text-neon" href="inicio.html">
+        <img src="imagens/Logo If.png" alt="Logo" height="50" class="d-inline-block align-text-top">
         Jornal IF
       </a>
 
@@ -40,13 +40,13 @@
       <div class="collapse navbar-collapse justify-content-end pe-5 pe-menuopções" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active fs-5 fw-bold px-3" href="inicio.html">Início</a>
+            <a class="nav-link active fs-5 fw-bold px-3 text-light" href="inicio.html">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5 fw-bold px-3" href="Noticias.html">Notícias</a>
+            <a class="nav-link fs-5 fw-bold px-3 text-light" href="#Noticias">Notícias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5 fw-bold px-3" href="sobre.html">Sobre</a>
+            <a class="nav-link fs-5 fw-bold px-3 text-light" href="sobre.html">Sobre</a>
           </li>
         </ul>
       </div>
@@ -62,9 +62,9 @@
 </div>
 
 
-  <div class="caixatexto bg-info d-flex flex-column align-items-center pb-5">
-    <h1 class="titulo pb-5 fs-0">Jornal IF</h1>
-    <p class="texto text-center fs-3 m-0">Bem-vindo ao Jornal IF!
+  <div class="caixatexto d-flex flex-column align-items-center pb-5">
+    <h1 class="titulo pb-5 fs-0 fw-bold">Jornal IF</h1>
+    <p class="texto text-center fs-3 m-0 texto-sombreado">Bem-vindo ao Jornal IF!
       <br><br>Este site foi desenvolvido por estudantes do Instituto Federal de Cubatão como parte de um projeto escolar voltado à comunicação e à informação. Nosso objetivo é divulgar notícias, pesquisas e iniciativas sobre saúde e bem-estar, com foco nas ações do campus e da Baixada Santista.
       <br><br>Aqui, você encontra conteúdos que inspiram hábitos saudáveis, valorizam a qualidade de vida e fortalecem a comunidade local.</p>
       <a href="" class="btn btn-outline-light btn-lg blur mt-5"> Saiba Mais --&gt;</a>
@@ -73,59 +73,58 @@
   <!--Caixas para as notícias-->
   <div class="caixadenoticias container-fluid p-0">
     <div class="container-fluid d-flex justify-content-center mt-5" id="Noticias">
-    <h1 class="text-light fw-bold display-5 text-light">NOTÍCIAS</h1>
+    <h1 class="text-light fw-bold display-5 text-dark">NOTÍCIAS</h1>
     </div>
     <div class="container my-5">
   <div class="row g-4 d-flex justify-content-center">
 
     <!-- Primeira mini caixa -->
-    <div class="col-12 col-sm-5 col-md-5 col-lg-4">
-      <a href="#Satelite" class="text-decoration-none text-light">
+    <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+      <a href="noticia1.html" class="text-decoration-none text-light">
       <div class="card text-center h-100 card-hover-black">
-        <img src="imagens/Satélite.jpg" class="card-img-top" alt="Satélite">
+        <img src="imagens/velha.jpg" class="card-img-top" alt="velha">
+        <div class="alert alert-warning p-1 m-0">Semana 1</div>
         <div class="card-body">
-          <h5 class="card-title fs-4">Tecnologia espacial já consegue detectar mudanças milimétricas no solo</h5>
-          <p class="card-text">A NASA revelou que satélites já conseguem detectar mudanças no solo de apenas alguns milímetros.</p>
+          <h5 class="card-title">Cubatão mantém o primeiro lugar em ranking regional do Ministério da Saúde</h5>
         </div>
       </div>
       </a>
     </div>
 
     <!-- Segunda mini caixa -->
-    <div class="col-12 col-sm-5 col-md-5 col-lg-4">
-      <a href="#Drone" class="text-decoration-none text-light">
+    <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+      <a href="noticia2.html" class="text-decoration-none text-light">
       <div class="card text-center h-100 card-hover-black">
-        <img src="imagens/Drone wallpaper.png" class="card-img-top" alt="Drone">
+        <img src="imagens/mulher tossindo.jpg" class="card-img-top" alt="Drone">
+        <div class="alert alert-warning p-1 m-0">Semana 2</div>
         <div class="card-body">
-          <h5 class="card-title">Tecnologia de drones e inteligência artificial revoluciona operações de resgate</h5>
-          <p class="card-text">Combinando inteligência artificial e tecnologia de drones, equipes de resgate ganham agilidade sem precedentes na busca por sobreviventes.</p>
+          <h5 class="card-title">Efeitos das mudanças do clima agravam alergias</h5>
         </div>
       </div>
       </a>
     </div>
 
     <!-- Terceira mini caixa -->
-    <div class="col-12 col-sm-5 col-md-5 col-lg-4">
-      <a href="#Datacenter" class="text-decoration-none text-light">
+    <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+      <a href="noticia3.html" class="text-decoration-none text-light">
       <div class="card text-center h-100 card-hover-black">
-        <img src="imagens/Data center.jpg" class="card-img-top" alt="Data center">
+        <img src="imagens/remedio.jpg" class="card-img-top" alt="Data center">
+        <div class="alert alert-warning p-1 m-0">Semana 3</div>
         <div class="card-body">
-          <h5 class="card-title">Estudo aponta Brasil e Chile como "PARAÍSOS" para data centers</h5>
-          <p class="card-text">A América do Sul especialmente o Brasil e o Chile detém atributos para tornar-se um novo polo de data centers no mundo.</p>
+          <h5 class="card-title">Reposição de testosterona em homens: entenda os riscos do uso abusivo</h5>
         </div>
       </div>
     </a>
     </div>
 
     <!-- Quarta mini caixa -->
-    <div class="col-12 col-sm-5 col-md-5 col-lg-4">
-      <a href="#Impressora3d" class="text-decoration-none text-light">
+    <div class="col-12 col-sm-4 col-md-4 col-lg-3">
+      <a href="noticia4.html" class="text-decoration-none text-light">
       <div class="card text-center h-100 card-hover-black">
-        <img src="imagens/Impressora 3d.jpg" class="card-img-top" alt="Impressora 3d">
-        <div class="alert alert-warning p-1 m-0">Nova!</div>
+        <img src="imagens/Pulmão.jpg" class="card-img-top" alt="Impressora 3d">
+        <div class="alert alert-warning p-1 m-0">Semana 4</div>
         <div class="card-body">
-          <h5 class="card-title">Casas impressas por impressoras 3d foram testadas pela primeira vez</h5>
-          <p class="card-text">Uma equipe de cientistas do Reino Unido tem trabalhado no desenvolvimento de um simulador capaz de testar esses edifícios impressos em 3D</p>
+          <h5 class="card-title">Vacina para prevenir câncer de pulmão inicia estudos em humanos</h5>
         </div>
       </div>
     </a>
@@ -137,6 +136,7 @@
   © 2025 - Jornal IF - Todos os direitos reservados.
   </footer>
 
-    
+     <!-- JavaScript do menu -->
+    <script src="inicio.js"></script>
 </body>
 </html>
