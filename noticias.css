@@ -6,6 +6,7 @@
 /* --- Footer --- */
 footer {
   background-color: lightgray;
+  overflow: clip;
 }
 
 /* --- IMC --- */
