@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link href="style.css" rel="stylesheet">
+    <script src="imc.js"></script>
   </head>
 
   <body>
@@ -75,7 +76,7 @@
           </p>
         </div>
         <div class="col-md-4">
-          <img src="images/vacina.jpeg" class="img-fluid">
+          <img src="vacina.jpeg" class="img-fluid">
         </div>
           <p class="fs-5">
           Na prática, esse sistema funciona como um vetor viral não replicante —um vírus modificado que não causa infecção e serve apenas como meio de transporte para levar um conjunto específico de instruções até as células.
@@ -97,6 +98,8 @@
           </p>
       </section>
     </main>
+
+    <!-- Rodapé -->
     <footer class="container-fluid mt-5">
       <div class="row mx-5 py-5">
         <a class="h3 text-center link-success link-underline link-underline-opacity-0" href="https://cbt.ifsp.edu.br/">Instituto Federal de Cubatão</a>
@@ -111,7 +114,7 @@
         </div>
         <div class="col-md-6">
           <ul>
-            <li>Pietra</li>
+            <li>Pietra Oliveira Canuto Faria</li>
             <li>Raphaell dos Santos Oliveira Leite</li>
             <li>Victor Hugo Luz Pereira</li>
           </ul>
@@ -133,5 +136,27 @@
         </a>
       </div>
     </footer>
+
+    <!-- Calculadora de IMC -->
+    <div id="btn-imc">
+      <button id="btn-importante" onclick="show('imc')">IMC</button>
+      <div id="imc" class="container p-5 border">
+        <h4>Calculadora de IMC</h4>
+        <h6>(Índice de Massa Corporal)</h6>
+        <div class="row">
+          <div id="inputs">
+            <label class="col-12">Altura (cm)</label>
+            <input id="altura" class="col-12" type="number" min=0 max=500>
+            <label class="col-12">Peso (kg)</label>
+            <input id="peso" class="col-12" type="number" min=0 max=500>
+            <button onclick="calcule_imc()">Calcular</button>
+          </div>
+          <div id="outputs">
+            <h4>Seu IMC é...</h4>
+            <h1 id="imc-result">hello</h1>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
