@@ -5,7 +5,9 @@
     <title>Notícias</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet">
+    <link href="geral.css" rel="stylesheet">
+    <link href="noticias.css" rel="stylesheet">
+    <script src="imc.js"></script>
   </head>
 
   <body>
@@ -15,7 +17,7 @@
         <div class="container-fluid px-5">
           
           <!-- Logo -->
-          <a class="navbar-brand text-white fw-semibold fs-4" href="#">
+          <a class="navbar-brand text-white fw-semibold fs-4" href="inicio.html">
             Jornal IF
           </a>
 
@@ -29,7 +31,7 @@
           <div class="collapse navbar-collapse justify-content-center" id="navbarAiWork">
           <div class="nav-blur-box px-3 py-1">
             <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
-              <li class="nav-item mx-4"><a class="nav-link text-secondary fw-medium" href="#">Início</a></li>
+              <li class="nav-item mx-4"><a class="nav-link text-secondary fw-medium" href="inicio.html">Início</a></li>
               <li class="nav-item dropdown mx-4">
               <a class="nav-link dropdown-toggle text-secondary fw-medium" href="#" id="noticiasDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
@@ -42,13 +44,13 @@
               <li><a class="dropdown-item" href="noticia4.html">Semana 4</a></li>
               </ul>
               </li>
-              <li class="nav-item mx-4"><a class="nav-link text-secondary fw-medium" href="#">Contato</a></li>
+              <li class="nav-item mx-4"><a class="nav-link text-secondary fw-medium" href="sobre.html">Contato</a></li>
             </ul>
           </div>
           </div>
 
           <!-- Logo -->
-          <a href="#" class="d-flex align-items-center">
+          <a href="inicio.html" class="d-flex align-items-center">
           <img src="Logo If.png" alt="Logo" class="ms-lg-3" style="height: 45px;">
           </a>
 
@@ -93,5 +95,65 @@
         </div>
       </section>
     </main>
+
+    <!-- Rodapé -->
+    <footer class="container-fluid mt-5">
+      <div class="row mx-5 py-5">
+        <a class="h3 text-center link-success link-underline link-underline-opacity-0" href="https://cbt.ifsp.edu.br/">Instituto Federal de Cubatão</a>
+        <strong class="m-2 h4">Grupo:</strong>
+        <div class="col-md-6">
+          <ul>
+            <li>Davi Andrade dos Santos Rodrigues Oliveira</li>
+            <li>João Pedro Oliveira de Souza</li>
+            <li>João Victor Salgado dos Santos</li>
+            <li>Miguel Ribeiro Fernandes</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Pietra Oliveira Canuto Faria</li>
+            <li>Raphaell dos Santos Oliveira Leite</li>
+            <li>Victor Hugo Luz Pereira</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row mx-5 pb-4">
+        <strong class="h4">Fontes:</strong>
+        <a class="link-dark" href="https://www.cubatao.sp.gov.br/cubatao-mantem-primeiro-lugar-em-ranking-regional-do-ministerio-da-saude-unica-cidade-da-baixada-a-estar-na-faixa-verde/">
+          https://www.cubatao.sp.gov.br/cubatao-mantem-primeiro-lugar-em-ranking-regional-do-ministerio-da-saude-unica-cidade-da-baixada-a-estar-na-faixa-verde/
+        </a>
+        <a class="link-dark" href="https://www.cnnbrasil.com.br/saude/efeitos-das-mudancas-do-clima-agravam-alergias-diz-especialista/">
+          https://www.cnnbrasil.com.br/saude/efeitos-das-mudancas-do-clima-agravam-alergias-diz-especialista/
+        </a>
+        <a class="link-dark" href="https://g1.globo.com/saude/bem-estar/noticia/2025/10/16/reposicao-da-testosterona-em-homens-entenda-os-riscos-do-uso-abusivo.ghtml">
+          https://g1.globo.com/saude/bem-estar/noticia/2025/10/16/reposicao-da-testosterona-em-homens-entenda-os-riscos-do-uso-abusivo.ghtml
+        </a>
+        <a class="link-dark" href="https://g1.globo.com/saude/noticia/2025/11/20/vacina-para-prevenir-cancer-de-pulmao-inicia-estudos-em-humanos-entenda-como-funciona-e-quem-deve-receber.ghtml">
+          https://g1.globo.com/saude/noticia/2025/11/20/vacina-para-prevenir-cancer-de-pulmao-inicia-estudos-em-humanos-entenda-como-funciona-e-quem-deve-receber.ghtml
+        </a>
+      </div>
+    </footer>
+
+    <!-- Calculadora de IMC -->
+    <div id="btn-imc">
+      <button id="btn-importante" onclick="show('imc')">IMC</button>
+      <div id="imc" class="container p-5 border">
+        <h4>Calculadora de IMC</h4>
+        <h6>(Índice de Massa Corporal)</h6>
+        <div class="row">
+          <div id="inputs">
+            <label class="col-12">Altura (cm)</label>
+            <input id="altura" class="col-12" type="number" min=0 max=500>
+            <label class="col-12">Peso (kg)</label>
+            <input id="peso" class="col-12" type="number" min=0 max=500>
+            <button onclick="calcule_imc()">Calcular</button>
+          </div>
+          <div id="outputs">
+            <h4>Seu IMC é...</h4>
+            <h1 id="imc-result">hello</h1>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
