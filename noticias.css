@@ -1,0 +1,40 @@
+/* --- Manchete --- */
+.manchete {
+    color: #0000aa;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: lightgray;
+}
+
+/* --- IMC --- */
+#btn-imc {
+  position: fixed;
+  left: 5px;
+  top: 20%;
+}
+
+#btn-importante {
+  background-color: rgb(0, 173, 198);
+  border-color: rgb(0, 173, 198);
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 25%;
+}
+
+#imc {
+  position: relative;
+  left: 50px;
+  background-color: lightgray;
+  display: none;
+  max-width: 275px;
+}
+
+#inputs {
+  display: block;
+}
+
+#outputs {
+  display: none;
+}
