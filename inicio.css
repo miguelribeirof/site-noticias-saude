@@ -49,6 +49,7 @@ html, body {
 @media (max-width: 768px) {
     .caixatexto {
         background-image: none !important;
+      color: black;
     }
 }
 
@@ -130,6 +131,7 @@ html, body {
 .card-hover-black {
     transition: transform .25s ease-in-out; /* animação suave */
 }
+
 
 
 
