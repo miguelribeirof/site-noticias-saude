@@ -43,8 +43,6 @@ html, body {
 .caixatexto {
     background-size: cover;
     background-image: url("images/Fundo saúde.png");
-    padding-top: 5%;
-    padding-bottom: 5%;
 }
 
 /* Remove a imagem só no celular */
@@ -132,6 +130,7 @@ html, body {
 .card-hover-black {
     transition: transform .25s ease-in-out; /* animação suave */
 }
+
 
 
 
