@@ -73,8 +73,6 @@ html, body {
 
 .caixadenoticias {
     background-color: rgb(0, 255, 242);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
 }
 
 .card {
@@ -132,4 +130,5 @@ html, body {
 .card-hover-black {
     transition: transform .25s ease-in-out; /* animação suave */
 }
+
 
