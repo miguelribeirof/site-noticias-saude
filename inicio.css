@@ -130,4 +130,9 @@ html, body {
 .nav-link.active 
 {
     text-decoration: underline;
+
+}
+
+.card-hover-black {
+    transition: transform .25s ease-in-out; /* animação suave */
 }
