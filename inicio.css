@@ -102,7 +102,7 @@ html, body {
 }
 
 .texto-sombreado {
-    color: white;
+    color: black;
     text-shadow: 
         2px 2px 4px rgba(0,0,0,0.5);  /* deixa mais forte */
 }
@@ -139,6 +139,7 @@ html, body {
 .card-hover-black {
     transition: transform .25s ease-in-out; /* animação suave */
 }
+
 
 
 
